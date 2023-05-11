@@ -8,7 +8,6 @@ const UserStatsGraphs = React.lazy(() => import('.//UserStatsGraphs'))
 
 const UserStats = () => {
   const { data, error, loading, request } = useFetch();
-  console.log('Primeiro contato: ', request);
   React.useEffect(() => {
     async function getData() {
       const { url, options } = STATS_GET();
